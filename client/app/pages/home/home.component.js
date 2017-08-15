@@ -6,7 +6,7 @@ let homeComponent = {
   bindings: {},
   template,
   controller,
-  controllerAs: '$ctrl'
+  controllerAs: 'vm'
 };
 
 export default homeComponent;
