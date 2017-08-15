@@ -1,2 +1,9 @@
-first chan
-now another change
+ <form name="myForm">
+    <label for="mySelect">Make a choice:</label>
+    <select name="mySelect" id="mySelect"
+      ng-options="option for option in vm.options"
+      ng-change="vm.loadOption()"
+      ng-model="vm.selected"></select>
+  </form>
+  <pre>{{vm.selectedResult | json}}</pre>
+  <input ng-model="vm.amount" ng-change="vm.calc()">{{vm.selectedResult[0].price}}<br>{{vm.result}}
